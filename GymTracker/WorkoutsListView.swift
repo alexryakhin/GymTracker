@@ -8,22 +8,30 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct WorkoutsListView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Workout.timestamp, ascending: true)],
         animation: .default)
-    private var items: FetchedResults<Item>
+    private var workouts: FetchedResults<Workout>
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
-                ForEach(items) { item in
+                ForEach(workouts) { workout in
                     NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                        WorkoutDetailsView(workout: workout)
+                            .environment(\.managedObjectContext, viewContext)
                     } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+                        VStack(alignment: .leading) {
+                            Text(workout.name ?? "Workout")
+                                .fontWeight(.semibold)
+                                .foregroundStyle(.primary)
+                            Text(workout.timestamp!, formatter: itemFormatter)
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
                     }
                 }
                 .onDelete(perform: deleteItems)
@@ -38,14 +46,15 @@ struct ContentView: View {
                     }
                 }
             }
-            Text("Select an item")
+            .navigationTitle("Gym Tracker")
         }
     }
 
     private func addItem() {
         withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            let newWorkout = Workout(context: viewContext)
+            newWorkout.timestamp = Date()
+            newWorkout.name = "New workout"
 
             do {
                 try viewContext.save()
@@ -60,7 +69,7 @@ struct ContentView: View {
 
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
+            offsets.map { workouts[$0] }.forEach(viewContext.delete)
 
             do {
                 try viewContext.save()
@@ -76,11 +85,7 @@ struct ContentView: View {
 
 private let itemFormatter: DateFormatter = {
     let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
+    formatter.dateStyle = .medium
+    formatter.timeStyle = .short
     return formatter
 }()
-
-#Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-}

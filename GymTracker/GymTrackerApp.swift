@@ -13,7 +13,8 @@ struct GymTrackerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WorkoutsListView()
+                .fontDesign(.rounded)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

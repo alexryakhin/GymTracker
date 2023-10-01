@@ -8,21 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		02B3163C2AC9C37000109CB2 /* GymTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B3163B2AC9C37000109CB2 /* GymTrackerApp.swift */; };
-		02B3163E2AC9C37000109CB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B3163D2AC9C37000109CB2 /* ContentView.swift */; };
+		02B3163E2AC9C37000109CB2 /* WorkoutsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B3163D2AC9C37000109CB2 /* WorkoutsListView.swift */; };
 		02B316402AC9C37100109CB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02B3163F2AC9C37100109CB2 /* Assets.xcassets */; };
 		02B316432AC9C37100109CB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02B316422AC9C37100109CB2 /* Preview Assets.xcassets */; };
 		02B316452AC9C37100109CB2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B316442AC9C37100109CB2 /* Persistence.swift */; };
 		02B316482AC9C37100109CB2 /* GymTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02B316462AC9C37100109CB2 /* GymTracker.xcdatamodeld */; };
+		02B316642AC9CDD000109CB2 /* WorkoutDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B316632AC9CDD000109CB2 /* WorkoutDetailsView.swift */; };
+		02B3166C2AC9E97F00109CB2 /* Exercise+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B316662AC9E97F00109CB2 /* Exercise+CoreDataClass.swift */; };
+		02B3166D2AC9E97F00109CB2 /* Exercise+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B316672AC9E97F00109CB2 /* Exercise+CoreDataProperties.swift */; };
+		02B3166E2AC9E97F00109CB2 /* ExerciseSet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B316682AC9E97F00109CB2 /* ExerciseSet+CoreDataClass.swift */; };
+		02B3166F2AC9E97F00109CB2 /* ExerciseSet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B316692AC9E97F00109CB2 /* ExerciseSet+CoreDataProperties.swift */; };
+		02B316702AC9E97F00109CB2 /* Workout+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B3166A2AC9E97F00109CB2 /* Workout+CoreDataClass.swift */; };
+		02B316712AC9E97F00109CB2 /* Workout+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B3166B2AC9E97F00109CB2 /* Workout+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02B316382AC9C37000109CB2 /* GymTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B3163B2AC9C37000109CB2 /* GymTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymTrackerApp.swift; sourceTree = "<group>"; };
-		02B3163D2AC9C37000109CB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		02B3163D2AC9C37000109CB2 /* WorkoutsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsListView.swift; sourceTree = "<group>"; };
 		02B3163F2AC9C37100109CB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02B316422AC9C37100109CB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		02B316442AC9C37100109CB2 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		02B316472AC9C37100109CB2 /* GymTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymTracker.xcdatamodel; sourceTree = "<group>"; };
+		02B316632AC9CDD000109CB2 /* WorkoutDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailsView.swift; sourceTree = "<group>"; };
+		02B316662AC9E97F00109CB2 /* Exercise+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataClass.swift"; sourceTree = "<group>"; };
+		02B316672AC9E97F00109CB2 /* Exercise+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		02B316682AC9E97F00109CB2 /* ExerciseSet+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseSet+CoreDataClass.swift"; sourceTree = "<group>"; };
+		02B316692AC9E97F00109CB2 /* ExerciseSet+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseSet+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		02B3166A2AC9E97F00109CB2 /* Workout+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workout+CoreDataClass.swift"; sourceTree = "<group>"; };
+		02B3166B2AC9E97F00109CB2 /* Workout+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workout+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +69,10 @@
 		02B3163A2AC9C37000109CB2 /* GymTracker */ = {
 			isa = PBXGroup;
 			children = (
+				02B316652AC9E76C00109CB2 /* CoreDataEntities */,
 				02B3163B2AC9C37000109CB2 /* GymTrackerApp.swift */,
-				02B3163D2AC9C37000109CB2 /* ContentView.swift */,
+				02B3163D2AC9C37000109CB2 /* WorkoutsListView.swift */,
+				02B316632AC9CDD000109CB2 /* WorkoutDetailsView.swift */,
 				02B3163F2AC9C37100109CB2 /* Assets.xcassets */,
 				02B316442AC9C37100109CB2 /* Persistence.swift */,
 				02B316462AC9C37100109CB2 /* GymTracker.xcdatamodeld */,
@@ -71,6 +87,19 @@
 				02B316422AC9C37100109CB2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		02B316652AC9E76C00109CB2 /* CoreDataEntities */ = {
+			isa = PBXGroup;
+			children = (
+				02B316662AC9E97F00109CB2 /* Exercise+CoreDataClass.swift */,
+				02B316672AC9E97F00109CB2 /* Exercise+CoreDataProperties.swift */,
+				02B316682AC9E97F00109CB2 /* ExerciseSet+CoreDataClass.swift */,
+				02B316692AC9E97F00109CB2 /* ExerciseSet+CoreDataProperties.swift */,
+				02B3166A2AC9E97F00109CB2 /* Workout+CoreDataClass.swift */,
+				02B3166B2AC9E97F00109CB2 /* Workout+CoreDataProperties.swift */,
+			);
+			path = CoreDataEntities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +173,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				02B316482AC9C37100109CB2 /* GymTracker.xcdatamodeld in Sources */,
+				02B316702AC9E97F00109CB2 /* Workout+CoreDataClass.swift in Sources */,
 				02B316452AC9C37100109CB2 /* Persistence.swift in Sources */,
-				02B3163E2AC9C37000109CB2 /* ContentView.swift in Sources */,
+				02B3166E2AC9E97F00109CB2 /* ExerciseSet+CoreDataClass.swift in Sources */,
+				02B3163E2AC9C37000109CB2 /* WorkoutsListView.swift in Sources */,
+				02B3166F2AC9E97F00109CB2 /* ExerciseSet+CoreDataProperties.swift in Sources */,
 				02B3163C2AC9C37000109CB2 /* GymTrackerApp.swift in Sources */,
+				02B3166D2AC9E97F00109CB2 /* Exercise+CoreDataProperties.swift in Sources */,
+				02B316712AC9E97F00109CB2 /* Workout+CoreDataProperties.swift in Sources */,
+				02B316642AC9CDD000109CB2 /* WorkoutDetailsView.swift in Sources */,
+				02B3166C2AC9E97F00109CB2 /* Exercise+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
